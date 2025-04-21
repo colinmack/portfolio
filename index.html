@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colin - Front End Developer</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope-layout/3.0.6/isotope.pkgd.min.js"></script>
+    </head>
+  
+    <body>
+    <header class="header">
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+          </nav>
+    </header>
+
+    <section class="home" id="home">
+      <canvas id="starCanvas"></canvas>
+      <div class="home-content">
+          <h1>Hello!<span class="header-title"> I'm Colin</span></h1>
+          <h3>I'm a Front End Developer</h3>
+            <a href="#about" class="scroll-arrow">
+              <i class="fas fa-arrow-down"></i>
+          </a>
+      </div>
+  </section>
+  
+    <section class="about" id="about">
+      <div class="container">
+        <div class="mockup mockup-macbook loaded opened">
+          <div class="part top">
+              <img src="images/macbook/macbook-top.svg" alt="" class="top">
+              <img src="images/macbook/macbook-cover.svg" alt="" class="cover">
+              <img src="images/header.png" alt="Cmack Tech" class="mockup-screen">
+          </div>
+          <div class="part bottom">
+              <img src="images/macbook/macbook-cover.svg" alt="" class="cover">
+              <img src="/images/macbook/macbook-bottom.svg" alt="" class="bottom">
+          </div>
+      </div>
+        </div>
+
+      <div class="about-content">
+        
+      <h2>About <span>Me</span></h2>   
+      <p>Hey, I’m Colin! I’m a Front-End Developer with over three years of experience. I specialize in front-end technologies such as HTML, CSS, JavaScript, React, and PHP, with strong proficiency in WordPress.</p>
+      <div class="social-icons">
+        <a href="https://github.com/colinmack" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-github"></i>
+        </a>
+      </div>
+    </section>
+
+
+    <section class="key-skills" id="key-skills">
+      <h2 class="heading">Key Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Front-End Development</h3>
+          <br>
+          <p>Building responsive and interactive web applications using HTML, CSS, JavaScript, and frameworks like React.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-wordpress"></i>
+          <h3>WordPress</h3>
+          <br>
+          <p>Customising WordPress themes and plugins to create dynamic, user-friendly websites with HMTL, CSS and PHP.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <br>
+          <p>Creating visually appealing designs using Adobe Photoshop, Illustrator, Figma and Canva for web and print media.</p>
+        </div>
+      </div>
+    </section>
+    
+<section id="portfolio" class="portfolio section">
+    <h2 class="heading">Portfolio</h2>
+
+  <div class="portfolio-container">
+    <div class="isotope-layout">
+      <ul class="portfolio-filters">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-wordpress">WordPress</li>
+        <li data-filter=".filter-react">React</li>
+      </ul>
+
+      <div class="portfolio-grid">
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/fmx-events.webp" alt="FMX Events">
+      <div class="portfolio-info">
+        <h4>FMX Events</h4>
+        <p>WordPress site for an events company with custom styling. Click the magnifying glass to view full project description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="View on GitHub">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="https://fmxevents.com/" target="_blank" title="Descriptionr">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/ekos-group.webp" alt="EKOS Group">
+      <div class="portfolio-info">
+        <h4>EKOS Group</h4>
+        <p>WordPress site for a UK-wide holiday parks group. Click the magnifying glass to view full project description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="Description">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="https://www.ekosgroup.co.uk/" target="_blank" title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/caledonia-luxe-stays.webp" alt="Caledonia Luxe Stays">
+      <div class="portfolio-info">
+        <h4>Caledonia Luxe Stays</h4>
+        <p>WordPress site for a Scottish property company. Click the magnifying glass to view full project description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="Description">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="http://caledonialuxestays.com/" target="_blank" title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/platinum-hair-and-beauty.webp" alt="Platinum Hair & Beauty">
+      <div class="portfolio-info">
+        <h4>Platinum Hair & Beauty</h4>
+        <p>Salon website built with WordPress. Click the magnifying glass to view full project description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="Description">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="https://platinum-hair-and-beauty.co.uk/" target="_blank" title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/the-warrington-hotel.webp" alt="The Warrington Hotel">
+      <div class="portfolio-info">
+        <h4>The Warrington Hotel</h4>
+        <p>Hotel website built with WordPress. Click the magnifying glass to view description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="Description">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="https://thewarringtonhotel.co.uk/" target="_blank"  title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-wordpress">
+    <div class="portfolio-content">
+      <img src="/images/jessicas-helping-hand.webp" alt="Jessica's Helping Hand">
+      <div class="portfolio-info">
+        <h4>Jessica's Helping Hand</h4>
+        <p>Hotel website built with WordPress. Click the magnifying glass to view description.</p>
+        <div class="portfolio-links">
+          <a href="#" target="_blank" class="description" title="Description">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="https://jessicashelpinghand.com/" target="_blank"  title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-react">
+    <div class="portfolio-content">
+      <img src="/images/header.png" alt="Renfrewshire Foodbanks">
+      <div class="portfolio-info">
+        <h4>Renfrewshire Foodbanks</h4>
+        <p>React web app that lists food banks across Renfrewshire by postcode. View code below and view on browser.</p>
+        <div class="portfolio-links">
+          <a href="https://github.com/colinmack/renfrewshirefoodbanks" target="_blank" class="github-link" title="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/yourgithubrepo" target="_blank"  title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-item filter-react">
+    <div class="portfolio-content">
+      <img src="/images/weather-app.webp" alt="Weather App">
+      <div class="portfolio-info">
+        <h4>Weather App (PWA)</h4>
+        <p>React web app that displays current weather data for any city. View code below and view on browser.</p>
+        <div class="portfolio-links">
+          <a href="https://github.com/colinmack/weather-app" target="_blank" class="github-link" title="View on GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://pwa-weatherapplication.netlify.app/" target="_blank" title="View on browser">
+            <i class="fa-solid fa-globe"></i>
+         
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      
+     <div class="contact-box">
+      
+    <a href="mailto:hello@header" class="contact-item">
+        <i class="fas fa-envelope"></i> 
+    </a>
+    <a href="https://www.linkedin.com/in/cbmackinnon/" class="contact-item" target="_blank">
+        <i class="fab fa-linkedin"></i> 
+    </a>
+
+</div>
+
+  </section>
+  
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/colinmack" target="_blank" rel="noopener noreferrer">
+        <i class="bx bxl-github"></i>
+      </a>
+    </div>
+<ul class="list">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+  
+  </footer>
+  <script src="/js/script.js"></script>
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="close-lightbox">&times;</span>
+      <div class="lightbox-text" id="lightbox-text">
+      </div>
+    </div>
+  </div>
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <span class="close-lightbox">&times;</span>
+    <div class="lightbox-text" id="lightbox-text">
+    </div>
+  </div>
+</div>
+
+  </body>
+  </html>
