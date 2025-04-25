@@ -902,6 +902,25 @@ html {
       grid-template-columns: 1fr;
   }
 
+ .cc-revoke {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  left: 20px !important; 
+  bottom: 20px !important;
+  background: #6b0fb2 !important;
+  color: #fff !important;
+  padding: 0.8rem 1.6rem !important;
+  border-radius: 5px !important;
+  font-size: 1.4rem !important;
+  z-index: 9999 !important;
+  box-shadow: 0 0 15px rgba(107, 15, 178, 0.5);
+}
+
+.cc-revoke.cc-bottom.cc-left:hover {
+  transform: none !important;
+}
+
   .footer {
       padding: 20px 0px;
   }

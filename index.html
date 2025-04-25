@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM7NTCL8KS"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JM7NTCL8KS');
-    </script>
+    <!-- Google Analytics will be injected only after consent -->
+<script type="text/plain" data-cookieconsent="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-JM7NTCL8KS"></script>
+<script type="text/plain" data-cookieconsent="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JM7NTCL8KS');
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow">
@@ -310,5 +310,49 @@
     </div>
   </div>
 </div>
+<!-- Cookie Consent -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: "#000", // Matches your --second-bg-color
+          text: "#ffffff"     // Your --text-color
+        },
+        button: {
+          background: "#6b0fb2", // Your --main-color
+          text: "#ffffff"
+        }
+      },
+      theme: "classic",
+      type: "opt-in",
+      content: {
+        message: "This website uses cookies to ensure you get the best experience.",
+        allow: "Allow Cookies",
+        dismiss: "Decline",
+        link: "Learn more",
+        href: "/privacy-policy"
+      },
+      onInitialise: function (status) {
+        if (status === 'allow') enableAnalytics();
+      },
+      onStatusChange: function (status) {
+        if (status === 'allow') enableAnalytics();
+      }
+    });
+
+    function enableAnalytics() {
+      const scripts = document.querySelectorAll('script[data-cookieconsent="analytics"]');
+      scripts.forEach(oldScript => {
+        const newScript = document.createElement("script");
+        if (oldScript.src) newScript.src = oldScript.src;
+        else newScript.innerHTML = oldScript.innerHTML;
+        document.head.appendChild(newScript);
+      });
+    }
+  });
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   </body>
   </html>
