@@ -916,6 +916,17 @@ html {
   z-index: 9999 !important;
   box-shadow: 0 0 15px rgba(107, 15, 178, 0.5);
 }
+.cc-revoke.cc-bottom {
+    bottom: 0;
+    font-weight: 800;
+    text-decoration: none;
+    left: 3em;
+    border-top-left-radius: 0.3em !important;
+    border-top-right-radius: 0.3em !important;
+    background-color: #6a0dad !important;
+    color: #fff !important; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
 
 .cc-revoke.cc-bottom.cc-left:hover {
   transform: none !important;
