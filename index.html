@@ -317,11 +317,11 @@
     window.cookieconsent.initialise({
       palette: {
         popup: {
-          background: "#000", // Matches your --second-bg-color
-          text: "#ffffff"     // Your --text-color
+          background: "#000", 
+          text: "#ffffff"    
         },
         button: {
-          background: "#6b0fb2", // Your --main-color
+          background: "#6b0fb2", 
           text: "#ffffff"
         }
       },
@@ -330,9 +330,7 @@
       content: {
         message: "This website uses cookies to ensure you get the best experience.",
         allow: "Allow Cookies",
-        dismiss: "Decline",
-        link: "Learn more",
-        href: "/privacy-policy"
+        dismiss: "Decline"
       },
       onInitialise: function (status) {
         if (status === 'allow') enableAnalytics();
